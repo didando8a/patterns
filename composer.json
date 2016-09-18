@@ -1,0 +1,16 @@
+{
+    "name": "didando8a/patterns",
+    "description": "Learning design patterns in PHP",
+    "authors": [
+        {
+            "name": "Diego Daniel Dorado Ochoa",
+            "email": "didando8a@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Didando8a\\Patterns\\": "src"
+        }
+    },
+    "require": {}
+}
