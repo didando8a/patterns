@@ -2,12 +2,25 @@
 
 namespace Didando8a\Patterns\Abstracts;
 
+use Didando8a\Patterns\Interfaces\EngineInterface;
 use Didando8a\Patterns\Interfaces\VehicleInterface;
 
 class AbstractVehicle implements VehicleInterface
 {
     private $engine;
     private $color;
+
+    /**
+     * AbstractVehicle constructor.
+     * @param $engine
+     * @param $color
+     */
+    public function __construct(EngineInterface $engine, $color)
+    {
+        $this->engine = $engine;
+        $this->color = $color;
+    }
+
 
     public function getEngine()
     {
