@@ -1,6 +1,6 @@
 <?php
 
-namespace Didando8a\Patterns;
+namespace Didando8a\Patterns\Entity;
 
 use Didando8a\Patterns\Abstracts\AbstractEngine;
 
