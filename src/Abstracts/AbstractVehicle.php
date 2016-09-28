@@ -15,7 +15,7 @@ class AbstractVehicle implements VehicleInterface
      * @param $engine
      * @param $color
      */
-    public function __construct(EngineInterface $engine, $color)
+    public function __construct(EngineInterface $engine, $color = VehicleInterface::UNPAINTED)
     {
         $this->engine = $engine;
         $this->color = $color;
