@@ -37,6 +37,27 @@ class AbstractVehicle implements VehicleInterface
         $this->color = $color;
     }
 
+    public function cleanInterior()
+    {
+        return "Cleaning interior...\n";
+    }
+
+    public function cleanExterior()
+    {
+        return "Cleaning exterior...\n";
+    }
+
+    public function polishWindows()
+    {
+        return "Polishing windows...\n";
+    }
+
+    public function takesForTestDrive()
+    {
+        return "Taking for test drive...\n";
+    }
+
+
     public function __toString()
     {
         return get_class($this) . ' (' . (string)$this->engine . ')';

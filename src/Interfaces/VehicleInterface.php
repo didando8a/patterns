@@ -16,4 +16,9 @@ interface VehicleInterface
     public function getEngine();
     public function getColor();
     public function paint($color);
+
+    public function cleanInterior();
+    public function cleanExterior();
+    public function polishWindows();
+    public function takesForTestDrive();
 }
