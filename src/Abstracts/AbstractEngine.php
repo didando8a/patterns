@@ -2,6 +2,7 @@
 
 namespace Didando8a\Patterns\Abstracts;
 
+use Didando8a\Patterns\Interfaces\DiagnosticToolInterface;
 use Didando8a\Patterns\Interfaces\EngineInterface;
 
 abstract class AbstractEngine implements EngineInterface
@@ -24,6 +25,12 @@ abstract class AbstractEngine implements EngineInterface
     {
          $this->isTurbo();
     }
+
+    public function diagnose(DiagnosticToolInterface $diagnosticTool)
+    {
+        $diagnosticTool->runDiagnosis($this);
+    }
+
 
     public function __toString()
     {

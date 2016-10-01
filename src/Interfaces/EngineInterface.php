@@ -6,4 +6,6 @@ interface EngineInterface
 {
     public function getSize();
     public function isTurbo();
+
+    public function diagnose(DiagnosticToolInterface $diagnosticTool);
 }
