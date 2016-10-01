@@ -12,4 +12,9 @@ class Coupe extends AbstractCar
     {
         parent::__construct($engine, $color);
     }
+
+    public function getPrice()
+    {
+        return 7000;
+    }
 }

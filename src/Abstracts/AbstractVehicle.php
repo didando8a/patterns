@@ -5,7 +5,7 @@ namespace Didando8a\Patterns\Abstracts;
 use Didando8a\Patterns\Interfaces\EngineInterface;
 use Didando8a\Patterns\Interfaces\VehicleInterface;
 
-class AbstractVehicle implements VehicleInterface
+abstract class AbstractVehicle implements VehicleInterface
 {
     private $engine;
     private $color;
@@ -39,6 +39,7 @@ class AbstractVehicle implements VehicleInterface
 
     public function __toString()
     {
-        return get_class($this) . ' (' . (string)$this->engine . ')';
+        return sprintf("%s (%s), color: %s, price: %s", get_class($this)
+            , $this->engine, $this->color, $this->getPrice());
     }
 }

@@ -16,4 +16,5 @@ interface VehicleInterface
     public function getEngine();
     public function getColor();
     public function paint($color);
+    public function getPrice();
 }

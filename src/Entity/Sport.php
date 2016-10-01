@@ -12,4 +12,9 @@ class Sport extends AbstractCar
     {
         parent::__construct($engine, $color);
     }
+
+    public function getPrice()
+    {
+        return 8000;
+    }
 }

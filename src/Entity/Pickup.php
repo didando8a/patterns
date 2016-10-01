@@ -12,4 +12,9 @@ class Pickup extends AbstractVan
     {
         parent::__construct($engine, $color);
     }
+
+    public function getPrice()
+    {
+        return 9000;
+    }
 }
