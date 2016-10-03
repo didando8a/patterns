@@ -8,7 +8,7 @@ class DirectionalEvaluator
 
     public function __construct()
     {
-        $this->cities["arbedeen"] = new City("Arbedeen", 57.15, -2.15);
+        $this->cities["aberdeen"] = new City("Aberdeen", 57.15, -2.15);
         $this->cities["belfast"] = new City("Belfast", 54.62, -5.93);
         $this->cities["birmingham"] = new City("Birmingham", 52.42, -1.92);
         $this->cities["dublin"] = new City("Dublin", 53.33, -6.25);

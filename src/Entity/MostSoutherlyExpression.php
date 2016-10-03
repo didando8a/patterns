@@ -16,7 +16,7 @@ class MostSoutherlyExpression implements ExpressionInterface
 
     public function interpret() : City
     {
-        $resultingCity = new City("nowhere", -999.99, -999.99);
+        $resultingCity = new City("nowhere", 999.99, 999.99);
 
         foreach ($this->expression as $currentExpression) {
             $currentCity = $currentExpression->interpret();
