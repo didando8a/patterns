@@ -47,7 +47,14 @@ class GearBox
 
     public function setGear($gear) : self
     {
+        $previousGear = $this->currentGear;
         $this->currentGear = $gear;
+
+//        echo $gear . "\n";
+//        echo $this->getGear() . "\n";
+        if ($this->getGear() != $previousGear) {
+            $this->mediator->gearChanged($gear);
+        }
 
         return $this;
     }
