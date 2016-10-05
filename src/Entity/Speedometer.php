@@ -2,13 +2,17 @@
 
 namespace Didando8a\Patterns\Entity;
 
-class Speedometer
+use Didando8a\Patterns\Abstracts\AbstractObservable;
+
+class Speedometer extends AbstractObservable
 {
     private $currentSpeed;
     private $previousSpeed;
 
     public function __construct()
     {
+        parent::__construct();
+
         $this->currentSpeed = 0;
         $this->previousSpeed = 0;
     }
@@ -21,9 +25,11 @@ class Speedometer
         return $this->currentSpeed;
     }
 
-    public function setCurrentSpeed(int $currentSpeed)
+    public function setCurrentSpeed(int $currentSpeed) : AbstractObservable
     {
         $this->currentSpeed = $currentSpeed;
+        $this->setChange();
+        $this->notifyObservers();
 
         return $this;
     }
