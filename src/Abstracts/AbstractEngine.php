@@ -22,7 +22,7 @@ abstract class AbstractEngine implements EngineInterface
 
     public function isTurbo() : bool
     {
-         $this->isTurbo();
+         return $this->turbo;
     }
 
     public function __toString()
