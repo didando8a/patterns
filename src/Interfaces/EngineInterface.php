@@ -2,7 +2,7 @@
 
 namespace Didando8a\Patterns\Interfaces;
 
-interface EngineInterface
+interface EngineInterface extends VisitableInterface
 {
     public function getSize();
     public function isTurbo();
